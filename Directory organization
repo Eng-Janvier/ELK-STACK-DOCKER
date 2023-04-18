@@ -1,0 +1,12 @@
+create a folder called "elastic_data"
+inside elastic_data folder, paste in the file called "docker-compose.yml"
+inside elastic_data folder create two folders: "data and logstash"
+inside data folder, paste the csv file
+inside logstash folder: create other two folders called: "config and pipeline"
+inside config paste two files : "logstash.yml and pipelines.yml" to indicate the security status of the stack and location of configuration file respectivelly
+inside pipeline: paste the "logstash.conf" configuration file that define logastash pipeline
+goto elastic_data by using cmd and type "docker-compose up" to run the docker
+use "docker ps" to show the process that are running
+inside the logstash.conf file show the path of the csv by using container location mapped in docker-compose.yml file and this path should be /usr/share/data/data.csv
+use "docker-compose down" to stop the docker
+use docker-compose -v to show the version
